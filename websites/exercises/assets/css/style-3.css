@@ -15,11 +15,13 @@ input, button, textarea, select { font: inherit }
 
 @media (min-width: 768px) {
     section { padding: 4% 20% }/* Desktops *//* Desk/* Desktops */
-    tops */
+   
+ } /*tops */
+
 /* Desktops */
 
 
- }
+ 
  
  /* Mobiles */
  @media (max-width: 767px) {
