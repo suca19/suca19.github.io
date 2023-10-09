@@ -51,7 +51,11 @@ p {
     font-size: 20px;
     margin-bottom: 16px;
 }
+
 body { background-color: #fef1ef }
 h2, p { color: #1e266d }
 
+ul{
+    padding: auto;
+}
 a { color: darkgreen; }
