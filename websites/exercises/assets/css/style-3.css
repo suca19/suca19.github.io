@@ -229,17 +229,12 @@ input, button, textarea, select { font: inherit }
 }
 
 /* ====== PADDING AROUND WEB PAGE BODY CONTENT ======  */
-/* Desktops *//* Desktops */
-
-@media (min-width: 768px) {
-    section { padding: 4% 20% }/* Desktops *//* Desk/* Desktops */
-   
- } /*tops */
-
 /* Desktops */
 
-
- 
+@media (min-width: 768px) {
+    section { padding: 4% 20% }
+   
+ } 
  
  /* Mobiles */
  @media (max-width: 767px) {
@@ -266,22 +261,29 @@ a { color: blue; }
 .section-1 {
      background-color: var(--fuchsia-300)
 }
-
 .section-2{
-    background-color: var(--amber-300)
+    background-color: var(--lime-500)
+}
+.section-2 h2,
+.section-2 p{
+    color: rgb(173, 35, 166);
 }
 .section-3{
     background: var(--blue-500)
 }
 .section-3 h2,
 .section-3 p{
-    color: antiquewhite;
+    color: rgb(222, 194, 159);
 }
 .section-4{
     background-color: var(--gray-600)
 }
 .section-5{
-    background-color: var(--lime-400)
+    background: var(--trend-800)
+}
+.section-5 h2,
+.section-5 p{
+    color: rgb(41, 153, 173);
 }
 .section-6{
     background-color: var(--rose-600)
