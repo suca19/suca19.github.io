@@ -67,9 +67,9 @@ p {
 
 /* Images */
 img {
-margin-bottom: 42px;
+    margin-bottom: 42px;
 /* Drop shadow effect at right and botton of image*/
-box-shadow: 8px 10px 8px #888;
+    box-shadow: 8px 10px 8px #888;
 }
 
 /* Passive link styles */
