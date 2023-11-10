@@ -73,6 +73,7 @@ select {
 }
 
 h1 {
+    color: rgb(15, 14, 15);
     font-size: 78px;
     font-weight: normal;
     letter-spacing: -2px;
@@ -101,30 +102,50 @@ p {
 }
 
 body {
-    background-color: #315382;
+    background: linear-gradient(45deg, #3498db, #2ecc71, #e74c3c, #8e44ad);
+
+    background-size: 700% 700%;
+    animation: gradientAnimation 25s ease infinite;
     text-align: center;
     font-family: sans-serif;
+    
 }
 
 h2,
 p {
-    color: #2aa286
+    color: #ffffff
 }
 
 a {
     text-decoration: none;
-    color: rgb(8, 5, 2);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     display: flex;
     margin: 20px auto;
     width: fit-content;
     padding: 10px 20px;
-    background-color: rgb(86, 149, 239);
+    background-color: rgba(40, 55, 187, 0.541);
     border-radius: 18px;
 
 }
 
 a:hover {
-    background-color: rgb(116, 202, 239);
-    color: rgb(255, 255, 255);
+    background-color: rgb(104, 131, 206);
+    color: rgb(0, 0, 0);
 }
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 25% 50%;
+    }
+    50% {
+        background-position: 75% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
