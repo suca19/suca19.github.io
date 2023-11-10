@@ -26,7 +26,8 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: gray;
+        /* Purple to orange - modern */  
+        background-image: linear-gradient(90deg,#ff00cc,#333399);
 }
 
 @media (min-width: 768px) {

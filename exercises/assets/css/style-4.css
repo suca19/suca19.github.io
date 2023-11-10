@@ -89,3 +89,32 @@ a:hover, a:focus, a:active {
     color: #f26f21;
     border-bottom: solid 2px blue;
 }
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+.modern-button-left {
+    margin-right: 190px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2b343a; /* Choose your desired background color */
+    color: #f8f8f8; /* Text color */
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    
+}
+
+.modern-button-right {
+    margin-left: 190px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2b343a; /* Choose your desired background color */
+    color: #f8f8f8; /* Text color */
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
