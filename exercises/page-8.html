@@ -15,17 +15,20 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>The HTML box model with div elements</title>
     <meta name="description"
         content="A web page for exploring the HTML box model and in particular the properties of the div tag that can sub-divide elements into rectangular boxes.">
 
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/global.css" />
     <link rel="stylesheet" href="assets/css/style-8.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
+
+    <script src="../assets/js/global.js"></script>
 
 </head>
 
@@ -56,9 +59,10 @@
             alias debitis excepturi ipsa laudantium sapiente.</p>
     </div>
 
-    <p><a href="../index.html">Back to Home page</a></p>
-
-    <p><a href="#top-of-page">Return to top of page</a></p>
+    <div class="footer">
+        <button class="link" onclick="onBackHome()">Back to Home page</button>
+        <button class="link" onclick="onBackTop()">Return to top of page</button>
+    </div>
 
 </body>
 

@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-
-        <!-- Google tag (gtag.js) -->
-        <script async
-            src="https://www.googletagmanager.com/gtag/js?id=G-5Z4SC7G1N4"></script>
-        <script>
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5Z4SC7G1N4"></script>
+    <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
 
-        gtag('config', 'G-5Z4SC7G1N4');
-        </script>
+        gtag("config", "G-5Z4SC7G1N4");
+    </script>
 
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hero Block with Text</title>
-        <meta name="description"
-            content="An above-the-fold hero block with animated text and various background colours.">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Block with Text</title>
+    <meta name="description"
+        content="An above-the-fold hero block with animated text and various background colours." />
 
-        <link rel="stylesheet" href="assets/css/hero-text.css">
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/hero-text.css" />
 
-    </head>
+    <script src="../assets/js/global.js"></script>
 
-    <body>
+</head>
 
-        <!-- hero block -->
-        <header class="hero-block text-center">
+<body>
 
-            <div class="hero-text-container">
-                <h1 class="slide-in-top">Albert Camus</h1>
-                <h2 class="slide-in-left">Creative Web Developer</h2>
-            </div>
+    <!-- hero block -->
+    <header class="hero-block text-center">
+        <div class="hero-text-container">
+            <h1 class="slide-in-top">Albert Camus</h1>
+            <h2 class="slide-in-left">Creative Web Developer</h2>
+        </div>
+    </header>
+    <!-- /hero block -->
 
-        </header>
-        <!-- /hero block -->
+    <div class="footer footer-headings">
+        <button class="link" onclick="onBackHome()">Back to Home page</button>
+    </div>
 
-        <p><a href="../index.html">Back to Home page</a></p>
-        
-    </body>
+</body>
 
 </html>

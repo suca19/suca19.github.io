@@ -15,12 +15,15 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>IBAT Analytics Software</title>
     <meta name="description"
         content="BAT Analytics tells you all you need to know about your website traffic, without tracking or storing visitors' personal information.">
 
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/global.css" />
     <link rel="stylesheet" href="assets/css/style-7.css">
+
+    <script src="../assets/js/global.js"></script>
 
 </head>
 
@@ -51,9 +54,10 @@
 
     <img src="assets/img/happy-users.png" alt="IBAT Analytics - Happy Users">
 
-    <p><a href="../index.html">Back to Home page</a></p>
-    
-    <p><a href="#top-of-page">Return to top of page</a></p>
+    <div class="footer">
+        <button class="link" onclick="onBackHome()">Back to Home page</button>
+        <button class="link" onclick="onBackTop()">Return to top of page</button>
+    </div>
 
 </body>
 

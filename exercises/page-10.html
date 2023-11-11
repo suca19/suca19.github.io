@@ -17,11 +17,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Exercise: Fonts and Responsive Font Size</title>
-
 	<meta name="description"
 		content="Linking your web pages to Google Fonts and formatting text elements by adding Google Font names to your stylesheets.">
-
-	<link rel="stylesheet" href="assets/css/style-10.css">
 
 	<!--Google Fonts-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,6 +27,12 @@
 		href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;600&family=Outfit:wght@400;700&family=Playfair+Display:wght@400;700&family=Work+Sans:wght@400;700&display=swap"
 		rel="stylesheet">
 
+	<link rel="stylesheet" href="../assets/css/reset.css">
+	<link rel="stylesheet" href="../assets/css/global.css" />
+	<link rel="stylesheet" href="assets/css/style-10.css">
+
+	<script src="../assets/js/global.js"></script>
+
 </head>
 
 <body id="top-of-page">
@@ -37,7 +40,9 @@
 	<!-- Section starts here -->
 	<section class="section-selector-1 w-1140px">
 
-		<div class="badge"><span>ABOUT ME</span></div>
+		<div class="badge">
+			<h2>ABOUT ME</h2>
+		</div>
 
 		<h2>I help startups <span>bring their vision to life</span></h2>
 		<p>I have 20 years of experience and design high-quality digital products
@@ -130,10 +135,11 @@
 	</section>
 	<!-- Section ends here -->
 
+	<div class="footer footer-headings">
+		<button class="link" onclick="onBackHome()">Back to Home page</button>
+		<button class="link" onclick="onBackTop()">Return to top of page</button>
+	</div>
+
 </body>
 
-	<p><a href="../index.html">Back to Home page</a></p>
-
-	<p><a href="#top-of-page">Return to top of page</a></p>
-
-	</html>
+</html>

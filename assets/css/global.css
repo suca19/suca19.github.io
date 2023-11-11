@@ -1,151 +1,17 @@
-/*  ============= WEB BROWSER RESETS ============ */
-body {
-    background-color: lightgreen;
+/*
+* Buttons
+*/
+
+.footer {
+  margin: 50px 0 0 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    border: none
+.link {
+  background: transparent;
 }
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box
+.link:hover {
+  color: rgb(81, 81, 142);
+  cursor: pointer;
 }
-
-html {
-    height: 100%;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    scroll-behavior: smooth;
-    scroll-padding-top: 20px
-}
-
-body {
-    line-height: 1.5;
-    min-height: 100vh
-}
-
-@media (max-width: 767px) {
-    body {
-        text-rendering: optimizeSpeed
-    }
-}
-
-@media (min-width: 768px) {
-    body {
-        text-rendering: optimizeLegibility
-    }
-}
-
-img {
-    width: 100%;
-    height: auto;
-    display: block
-}
-
-input,
-button,
-textarea,
-select {
-    font: inherit
-}
-
-/* ================= ENDS ================ */
-/* ====== PADDING AROUND WEB PAGE BODY CONTENT ======  */
-
-/* Desktops */
-
-@media (min-width: 768px) {
-    body {
-        padding: 4% 20%
-    }
-}
-
-/* Mobiles */
-@media (max-width: 767px) {
-    body {
-        padding: 8% 5%
-    }
-}
-
-h1 {
-    color: rgb(15, 14, 15);
-    font-size: 78px;
-    font-weight: normal;
-    letter-spacing: -2px;
-    margin-bottom: 12px;
-    line-height: 1.2;
-}
-
-h2 {
-    font-size: 42px;
-    letter-spacing: 6px;
-    margin-bottom: 48px;
-    line-height: 1.2;
-}
-
-h3 {
-    font-size: 24px;
-    margin-top: 48px;
-    margin-bottom: 20px;
-    line-height: 1.2;
-    text-transform: uppercase;
-}
-
-p {
-    font-size: 20px;
-    margin-bottom: 16px;
-}
-
-body {
-    background: linear-gradient(45deg, #3498db, #2ecc71, #e74c3c, #8e44ad);
-
-    background-size: 700% 700%;
-    animation: gradientAnimation 25s ease infinite;
-    text-align: center;
-    font-family: sans-serif;
-    
-}
-
-h2,
-p {
-    color: #ffffff
-}
-
-a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    display: flex;
-    margin: 20px auto;
-    width: fit-content;
-    padding: 10px 20px;
-    background-color: rgba(40, 55, 187, 0.541);
-    border-radius: 18px;
-
-}
-
-a:hover {
-    background-color: rgb(104, 131, 206);
-    color: rgb(0, 0, 0);
-}
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    25% {
-        background-position: 25% 50%;
-    }
-    50% {
-        background-position: 75% 50%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
-}
-

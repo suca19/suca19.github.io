@@ -1,0 +1,138 @@
+h1 {
+  color: rgb(48 45 48);
+  font-size: 78px;
+  font-weight: normal;
+  letter-spacing: -2px;
+  margin-bottom: 12px;
+  line-height: 1.2;
+  text-shadow: 4px 4px 4px #aaa;
+  font-family: "Tangerine", serif;
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 42px;
+  letter-spacing: 6px;
+  margin-bottom: 48px;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 24px;
+  margin-top: 48px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+body {
+  /* background: linear-gradient(45deg, #3498db, #2ecc71, #e74c3c, #8e44ad); */
+  /* background-size: 700% 700%; */
+  animation: gradientAnimation 25s ease infinite;
+  text-align: center;
+  /* font-family: sans-serif; */
+  font-family: "Work Sans", sans-serif;
+}
+
+h3,
+p {
+  color: #ffffff;
+}
+
+.my-message {
+  padding-bottom: 20px;
+}
+/* 
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 25% 50%;
+  }
+  50% {
+    background-position: 75% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+} */
+
+.container-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container-button > li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.button {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  display: flex;
+  margin: 10px auto;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 18px;
+}
+.button--page {
+  background-color: rgba(40, 55, 187, 0.541);
+}
+a:hover {
+  background-color: rgb(104, 131, 206);
+  color: rgb(255, 255, 255);
+}
+
+.image-logo {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+}
+
+/* ====== PADDING AROUND WEB PAGE BODY CONTENT ======  */
+
+/* Desktops */
+
+@media (min-width: 768px) {
+  body {
+    padding: 4% 20%;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 767px) {
+  body {
+    padding: 8% 5%;
+  }
+}
+
+/*** Transitions **/
+
+body {
+  background: linear-gradient(270deg, #88ba14, #2b46ce, #7e11a2, #11a235);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 10s ease infinite;
+  -moz-animation: AnimationName 10s ease infinite;
+  -o-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 22%;
+  }
+  50% {
+    background-position: 100% 79%;
+  }
+  100% {
+    background-position: 0% 22%;
+  }
+}
