@@ -1,3 +1,18 @@
+/* ====== PADDING AROUND WEB PAGE BODY CONTENT ======  */
+/* Desktops */
+
+@media (min-width: 768px) {
+  section {
+    padding: 4% 20%;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 767px) {
+  section {
+    padding: 5% 5%;
+  }
+}
 :root {
   /* Color variables */
   --black-000: #000000;
@@ -212,22 +227,6 @@
   --trend-700: #2c4763;
   --trend-800: #1f364d;
   --trend-900: #0e2439;
-}
-
-/* ====== PADDING AROUND WEB PAGE BODY CONTENT ======  */
-/* Desktops */
-
-@media (min-width: 768px) {
-  section {
-    padding: 4% 20%;
-  }
-}
-
-/* Mobiles */
-@media (max-width: 767px) {
-  section {
-    padding: 5% 5%;
-  }
 }
 
 h2 {

@@ -1,3 +1,17 @@
+/* Desktops */
+@media (min-width: 768px) {
+  body {
+    padding: 4% 20%;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 767px) {
+  body {
+    padding: 12% 8%;
+  }
+}
+
 h1 {
   font-size: 84px;
   text-align: center;
@@ -27,16 +41,39 @@ p {
   line-height: 1.6;
 }
 
-/* Desktops */
-@media (min-width: 768px) {
-  body {
-    padding: 4% 20%;
-  }
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+.modern-button-left {
+  margin-right: 190px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2b343a; /* Choose your desired background color */
+  color: #f8f8f8; /* Text color */
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
-/* Mobiles */
-@media (max-width: 767px) {
-  body {
-    padding: 12% 8%;
-  }
+.modern-button-right {
+  margin-left: 190px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2b343a; /* Choose your desired background color */
+  color: #f8f8f8; /* Text color */
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+a {
+  color: rgb(204, 196, 196);
+}
+
+a:hover {
+  background-color: rgb(146, 141, 141);
+  color: rgb(0, 0, 0);
 }

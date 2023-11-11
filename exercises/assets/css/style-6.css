@@ -3,6 +3,20 @@ body {
   background-color: #d1274b;
 }
 
+/* Desktops */
+@media (min-width: 768px) {
+  body {
+    padding: 4% 20%;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 767px) {
+  body {
+    padding: 12% 8%;
+  }
+}
+
 /* Main heading */
 h1 {
   font-family: serif;
@@ -48,18 +62,4 @@ p {
   line-height: 1.6;
   margin-top: 0;
   margin-bottom: 32px;
-}
-
-/* Desktops */
-@media (min-width: 768px) {
-  body {
-    padding: 4% 20%;
-  }
-}
-
-/* Mobiles */
-@media (max-width: 767px) {
-  body {
-    padding: 12% 8%;
-  }
 }

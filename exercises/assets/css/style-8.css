@@ -1,3 +1,19 @@
+/* ==== Web page width ==== */
+
+/* Desktops */
+@media (min-width: 768px) {
+  body {
+    padding: 4% 18%;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 767px) {
+  body {
+    padding: 12% 8%;
+  }
+}
+
 /* ==== Headings ==== */
 
 h1 {
@@ -62,20 +78,4 @@ p {
 .larry h3,
 .larry p {
   color: #000;
-}
-
-/* ==== Web page width ==== */
-
-/* Desktops */
-@media (min-width: 768px) {
-  body {
-    padding: 4% 18%;
-  }
-}
-
-/* Mobiles */
-@media (max-width: 767px) {
-  body {
-    padding: 12% 8%;
-  }
 }

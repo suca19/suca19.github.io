@@ -11,6 +11,11 @@ body {
   background-color: gray;
   overflow: none;
 }
+@media (min-width: 768px) {
+  .hero-block {
+    height: 80vh;
+  }
+}
 
 /* Spacing around text content: */
 .hero-text-container {
@@ -66,7 +71,7 @@ body {
 
 .footer-headings {
   margin: auto;
-  padding-top: 40px;
+  padding-top: 30px;
   justify-content: center;
 }
 /* ================ UTILITY CLASSES ============= */
@@ -77,12 +82,6 @@ body {
 .slide-in-top {
   -webkit-animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-@media (min-width: 768px) {
-  .hero-block {
-    height: 80vh;
-  }
 }
 
 /* ----------------------------------------------

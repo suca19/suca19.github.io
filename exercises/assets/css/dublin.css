@@ -12,6 +12,18 @@ body {
   min-height: 100vh;
 }
 
+@media (max-width: 767px) {
+  body {
+    text-rendering: optimizeSpeed;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    text-rendering: optimizeLegibility;
+  }
+}
+
 img {
   width: 100%;
   height: auto;
@@ -713,17 +725,5 @@ section > figure.img-circle img {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-
-@media (max-width: 767px) {
-  body {
-    text-rendering: optimizeSpeed;
-  }
-}
-
-@media (min-width: 768px) {
-  body {
-    text-rendering: optimizeLegibility;
   }
 }

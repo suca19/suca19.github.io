@@ -1,3 +1,14 @@
+@media (min-width: 768px) {
+  section > .badge {
+    margin-bottom: 42px;
+  }
+}
+@media (max-width: 767px) {
+  section > .badge {
+    margin-bottom: 24px;
+  }
+}
+
 /* ============ CUSTOM PROPERTIES ============  */
 
 :root {
@@ -324,17 +335,6 @@ section > .badge span {
   letter-spacing: 2px;
   color: #fff;
   font-size: 24px;
-}
-
-@media (min-width: 768px) {
-  section > .badge {
-    margin-bottom: 42px;
-  }
-}
-@media (max-width: 767px) {
-  section > .badge {
-    margin-bottom: 24px;
-  }
 }
 
 /* Horizontal alignment */

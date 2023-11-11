@@ -1,3 +1,17 @@
+/* Desktops */
+@media (min-width: 768px) {
+  body {
+    padding: 4% 20%;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 767px) {
+  body {
+    padding: 12% 8%;
+  }
+}
+
 body {
   background-color: #c2ffc2;
 }

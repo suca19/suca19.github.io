@@ -3,6 +3,22 @@ body {
   background-color: #ffffbd;
 }
 
+/* ====== PADDING AROUND WEB PAGE BODY CONTENT ======  */
+/* Desktops */
+
+@media (min-width: 768px) {
+  section {
+    padding: 4% 20%;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 767px) {
+  section {
+    padding: 5% 5%;
+  }
+}
+
 /* Main heading */
 h1 {
   font-family: serif;
@@ -71,18 +87,4 @@ a:active {
   padding-bottom: 2px;
   color: #f26f21;
   border-bottom: solid 2px blue;
-}
-
-/* Desktops */
-@media (min-width: 768px) {
-  body {
-    padding: 4% 20%;
-  }
-}
-
-/* Mobiles */
-@media (max-width: 767px) {
-  body {
-    padding: 12% 8%;
-  }
 }
