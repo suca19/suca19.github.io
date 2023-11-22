@@ -1,0 +1,6 @@
+/* Add your custom CSS here */
+header.theme-light { background-color: var(--sky-200) }
+header.theme-light h1 { color: var(--gray-900) }
+header.theme-light h2 { color: var(--slate-050) }
+
+
