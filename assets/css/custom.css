@@ -2,7 +2,7 @@
 .section-selector-1 { background-color: var(--lime-400) }
 
 .section-selector-1.cols-2-half .col-2 h2 {
-    font-family: 'Saira Condensed', sans-serif;
+    font-family: "Saira Condensed", sans-serif;
     letter-spacing: 1px;
     font-size: calc(28px + (42 - 28) * ((100vw - 320px) / (1140 - 320)));
     margin-top: 32px;
