@@ -96,7 +96,13 @@ a:hover {
   height: 200px;
   margin: 50px auto;
 }
+image.brand {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 50px auto;
 
+}
 /* ====== PADDING AROUND WEB PAGE BODY CONTENT ======  */
 
 /* Desktops */

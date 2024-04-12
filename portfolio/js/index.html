@@ -86,7 +86,7 @@
     <!-- navigation menu -->
 
     <nav class="container-menu menu-desktop menu-sticky">
-        <a href="../../index.html"><img src="assets/img/website-logo-sample.png" alt="website logo"></a>
+        <a href="../../index.html"><img src="assets/img/logo.png" alt="website logo"></a>
         <ul class="">
             <li><a href="../../index.html">Home</a></li>
             <li><a href="#">Portfolio</a></li>
@@ -281,6 +281,19 @@
     </footer>
 
     <script src="assets/js/menu.js"></script>
+    <script>
+
+        
+        //Carlos Sucapuca, JavaScript Developer
+        all_btns.array.forEach(element => el.addEventListener('click', event =>{
+            event.preventDefault();
+            //get button id
+            btn_id = event.currentTarget.id;
+            deleteRow(btn_id);
+        }));
+
+
+    </script>
 
 
 </body>
