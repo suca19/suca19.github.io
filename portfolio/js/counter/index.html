@@ -131,11 +131,11 @@
     <!-- navigation menu -->
 
     <nav class="container-menu menu-desktop menu-sticky">
-        <a href="../../../index.html"><img src="../assets/img/website-logo-sample.png" alt="website logo"></a>
+        <a href="../../../index.html"><img src="../assets/img/logo.png" alt="website logo"></a>
         <ul class="">
             <li><a href="../../index.html">Home</a></li>
-            <li><a href="../../portfolio/index.html">Portfolio</a></li>
-            <li><a href="../../contact/index.html" id="btn-cta"><span>Contact</span><i
+            <li><a href="../../../portfolio/index.html">Portfolio</a></li>
+            <li><a href="../../../contact/index.html" id="btn-cta"><span>Contact</span><i
                         class="fas fa-arrow-right"></i></a></li>
 
         </ul>
@@ -181,15 +181,14 @@
     <!-- footer -->
     <footer>
 
-        <h2>Joe Bloggs</h2>
+        <h2>Carlos Sucapuca</h2>
 
         <h3>Excellence in digital creation</h3>
 
         <ul class="footer-links">
             <li><a href="../../index.html">Home</a></li>
-            <li><a href="../../portfolio/index.html">Portfolio</a></li>
-            <li><a href="../../contact/index.html" id="btn-cta"><span>Contact</span><i
-                        class="fas fa-arrow-right"></i></a></li>
+            <li><a href="../../../portfolio/index.html">Portfolio</a></li>
+            <li><a href="../../../contact/index.html">Contact</a></li>
 
         </ul>
 
@@ -199,13 +198,48 @@
             <li><a href="https://github.com/suca19" target="_blank"><i class="fab fa-github-square"></i></a></li>
         </ul>
 
-        <p class="index.html"> <a href="../../privacy.html" style="color: #fff; background-color:transparent;">Privacy &
+        <p class="index.html"> <a href="../../../privacy.html"
+                style="color: #fff; background-color:transparent;">Privacy &
                 Legal</a></p>
 
     </footer>
 
     <script src="../assets/js/menu.js"></script>
 
+    <script>
+        // set inital value to zero
+        let count = 0;
+        // select value and buttons
+        const value = document.querySelector("#value");
+        const btns = document.querySelectorAll(".btn");
+
+        btns.forEach(function (btn) {
+            btn.addEventListener("click", function (e) {
+                const styles = e.currentTarget.classList;
+                if (styles.contains("decrease")) {
+                    count--;
+                }
+                else if (styles.contains("increase")) {
+                    count++;
+                }
+                else {
+                    count = 0;
+                }
+
+                if (count > 0) {
+                    value.style.color = "green";
+                }
+                if (count < 0) {
+                    value.style.color = "red";
+                }
+                if (count === 0) {
+                    value.style.color = "#222";
+                }
+                value.textContent = count;
+            });
+        });
+
+    </script>
 
 </body>
 

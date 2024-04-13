@@ -146,11 +146,11 @@
     <!-- navigation menu -->
 
     <nav class="container-menu menu-desktop menu-sticky">
-        <a href="../../../index.html"><img src="../assets/img/website-logo-sample.png" alt="website logo"></a>
+        <a href="../../../index.html"><img src="../assets/img/logo.png" alt="website logo"></a>
         <ul class="">
             <li><a href="../../index.html">Home</a></li>
-            <li><a href="../../portfolio/index.html">Portfolio</a></li>
-            <li><a href="../../contact/index.html" id="btn-cta"><span>Contact</span><i
+            <li><a href="../../../portfolio/index.html">Portfolio</a></li>
+            <li><a href="../../../contact/index.html" id="btn-cta"><span>Contact</span><i
                         class="fas fa-arrow-right"></i></a></li>
 
         </ul>
@@ -218,15 +218,14 @@
     <!-- footer -->
     <footer>
 
-        <h2>Joe Bloggs</h2>
+        <h2>Carlos Sucapuca</h2>
 
         <h3>Excellence in digital creation</h3>
 
         <ul class="footer-links">
             <li><a href="../../index.html">Home</a></li>
-            <li><a href="../../portfolio/index.html">Portfolio</a></li>
-            <li><a href="../../contact/index.html" id="btn-cta"><span>Contact</span><i
-                        class="fas fa-arrow-right"></i></a></li>
+            <li><a href="../../../portfolio/index.html">Portfolio</a></li>
+            <li><a href="../../../contact/index.html">Contact</a></li>
 
         </ul>
 
@@ -236,14 +235,52 @@
             <li><a href="https://github.com/suca19" target="_blank"><i class="fab fa-github-square"></i></a></li>
         </ul>
 
-        <p class="index.html"> <a href="../../privacy.html" style="color: #fff; background-color:transparent;">Privacy &
+        <p class="index.html"> <a href="../../../privacy.html"
+                style="color: #fff; background-color:transparent;">Privacy &
                 Legal</a></p>
 
     </footer>
 
     <script src="../assets/js/menu.js"></script>
 
+    <script>
+        //Hide the tip amount on load
+        document.getElementById("tipDisplayBox").style.display = "none";
+        document.getElementById("numOfPeople").value = 1;
 
+        // Calculate tip
+        function calculateTip() {
+            let billAmount = document.getElementById("billAmount").value;
+            let serviceQuality = document.getElementById("serviceQuality").value;
+            let numOfPeople = document.getElementById("numOfPeople").value;
+
+            // Validate input
+            if (billAmount === "" || serviceQuality == 0) {
+                alert("Please enter values");
+                return;
+            }
+
+            // Calculate tip
+            let tipTotal = (billAmount * serviceQuality);
+            // round to two decimal places
+            tipTotal = Math.round(tipTotal * 100) / 100;
+            // next line allows us to always have two digits after decimal point
+            tipTotal = tipTotal.toFixed(2);
+            // Display the tip
+            document.getElementById("tipDisplayBox").style.display = "block";
+            document.getElementById("tipTotal").innerHTML = tipTotal;
+            // Check to see if this input is empty or less than or equal to 1
+            if (numOfPeople === "" || parseInt(numOfPeople) <= 1) {
+                numOfPeople = 1;
+                document.getElementById("numOfPeople").value = 1;
+                tipEach = tipTotal;
+            }
+            document.getElementById("tipEach").innerHTML = (tipTotal / numOfPeople).toFixed(2);
+        }
+
+        // click to call function
+        document.getElementById("calculate").onclick = () => calculateTip();
+    </script>
 </body>
 
 </html>
